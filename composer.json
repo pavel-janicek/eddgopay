@@ -1,0 +1,6 @@
+{
+    "require": {
+        "gopay/payments-sdk-php": "^1.4",
+        "yahnis-elsts/plugin-update-checker": "^4.9"
+    }
+}

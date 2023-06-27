@@ -1,0 +1,34 @@
+{
+    "name": "gopay/payments-sdk-php",
+    "description": "GoPay's PHP SDK for Payments REST API",
+    "keywords": ["gopay", "payments", "sdk", "rest", "api"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GoPay",
+            "homepage": "https://github.com/gopaycommunity/gopay-php-api/contributors"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin",
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "GoPay\\": "src/"
+        },
+        "files": ["factory.php"]
+    },
+    "autoload-dev": {
+        "files": ["tests/remote/GivenGoPay.php", "vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php"]
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "^5.3.1|^6.2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "<6.0",
+        "hamcrest/hamcrest-php": "*"
+    }
+}
